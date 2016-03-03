@@ -34,6 +34,7 @@
                     </view>
                     <connections>
                         <outlet property="cardGesture" destination="R7o-TG-fRr" id="3WP-zc-duy"/>
+                        <outlet property="ryanGosling" destination="evO-bS-aY1" id="Pct-QW-FWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

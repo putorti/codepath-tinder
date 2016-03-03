@@ -10,11 +10,14 @@ import UIKit
 
 class CardsViewController: UIViewController {
 
+    @IBOutlet weak var ryanGosling: UIImageView!
     @IBOutlet var cardGesture: UIPanGestureRecognizer!
+    var ryanOriginalCenter: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cardGesture = UIPanGestureRecognizer(target: self, action: "dragCard:")
+        ryanOriginalCenter = ryanGosling.center
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +34,7 @@ class CardsViewController: UIViewController {
             print("Gesture began at: \(point)")
         } else if sender.state == UIGestureRecognizerState.Changed {
             print("Gesture changed at: \(point)")
+            ryanGosling.center = CGPoint(x: ryanOriginalCenter.x + translation.x, y: ryanOriginalCenter.y + translation.y)
         } else if sender.state == UIGestureRecognizerState.Ended {
             print("Gesture ended at: \(point)")
         }
