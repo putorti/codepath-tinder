@@ -26,6 +26,11 @@ class CardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        var profileViewController = segue.destinationViewController as! ProfileViewController
+profileViewController.image = self.ryanGosling.image
+    }
+    
     @IBAction func dragCard(sender: UIPanGestureRecognizer) {
         var point = sender.locationInView(view)
         var velocity = sender.velocityInView(view)
@@ -73,6 +78,10 @@ class CardsViewController: UIViewController {
         }
     }
 
+    @IBAction func ryanTap(sender: AnyObject) {
+        performSegueWithIdentifier("profileSegue", sender: self)
+    }
+    
     @IBAction func reset(sender: AnyObject) {
         ryanGosling.center = ryanOriginalCenter
         ryanGosling.transform = CGAffineTransformIdentity
