@@ -10,10 +10,11 @@ import UIKit
 
 class CardsViewController: UIViewController {
 
+    @IBOutlet var cardGesture: UIPanGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        cardGesture = UIPanGestureRecognizer(target: self, action: "dragCard:")
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +22,19 @@ class CardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func dragCard(sender: UIPanGestureRecognizer) {
+        var point = sender.locationInView(view)
+        var velocity = sender.velocityInView(view)
+        var translation = sender.translationInView(view)
+        
+        if sender.state == UIGestureRecognizerState.Began {
+            print("Gesture began at: \(point)")
+        } else if sender.state == UIGestureRecognizerState.Changed {
+            print("Gesture changed at: \(point)")
+        } else if sender.state == UIGestureRecognizerState.Ended {
+            print("Gesture ended at: \(point)")
+        }
+    }
 
     /*
     // MARK: - Navigation
