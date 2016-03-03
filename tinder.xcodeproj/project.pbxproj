@@ -17,6 +17,9 @@
 		9672D1961C87E4B700F2E8A9 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1951C87E4B700F2E8A9 /* CardsViewController.swift */; };
 		9672D1991C87EB4C00F2E8A9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1981C87EB4C00F2E8A9 /* Common.swift */; };
 		9672D19B1C87F6EC00F2E8A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D19A1C87F6EC00F2E8A9 /* ProfileViewController.swift */; };
+		9672D1A31C87FB5E00F2E8A9 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1A01C87FB5E00F2E8A9 /* BaseTransition.swift */; };
+		9672D1A41C87FB5E00F2E8A9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1A11C87FB5E00F2E8A9 /* Common.swift */; };
+		9672D1A51C87FB5E00F2E8A9 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1A21C87FB5E00F2E8A9 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		9672D1951C87E4B700F2E8A9 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		9672D1981C87EB4C00F2E8A9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../facebook/facebook/Common.swift; sourceTree = "<group>"; };
 		9672D19A1C87F6EC00F2E8A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9672D1A01C87FB5E00F2E8A9 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		9672D1A11C87FB5E00F2E8A9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		9672D1A21C87FB5E00F2E8A9 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 		9672D1661C87E36300F2E8A9 /* tinder */ = {
 			isa = PBXGroup;
 			children = (
+				9672D1A01C87FB5E00F2E8A9 /* BaseTransition.swift */,
+				9672D1A11C87FB5E00F2E8A9 /* Common.swift */,
+				9672D1A21C87FB5E00F2E8A9 /* FadeTransition.swift */,
 				9672D1671C87E36300F2E8A9 /* AppDelegate.swift */,
 				9672D1981C87EB4C00F2E8A9 /* Common.swift */,
 				9672D1691C87E36300F2E8A9 /* ViewController.swift */,
@@ -274,10 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9672D1991C87EB4C00F2E8A9 /* Common.swift in Sources */,
+				9672D1A31C87FB5E00F2E8A9 /* BaseTransition.swift in Sources */,
+				9672D1A51C87FB5E00F2E8A9 /* FadeTransition.swift in Sources */,
 				9672D16A1C87E36300F2E8A9 /* ViewController.swift in Sources */,
 				9672D19B1C87F6EC00F2E8A9 /* ProfileViewController.swift in Sources */,
 				9672D1681C87E36300F2E8A9 /* AppDelegate.swift in Sources */,
 				9672D1961C87E4B700F2E8A9 /* CardsViewController.swift in Sources */,
+				9672D1A41C87FB5E00F2E8A9 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
