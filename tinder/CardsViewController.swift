@@ -13,6 +13,7 @@ class CardsViewController: UIViewController {
     @IBOutlet weak var ryanGosling: UIImageView!
     @IBOutlet var cardGesture: UIPanGestureRecognizer!
     var ryanOriginalCenter: CGPoint!
+    var startedAtTheBottom: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +32,52 @@ class CardsViewController: UIViewController {
         var translation = sender.translationInView(view)
         
         if sender.state == UIGestureRecognizerState.Began {
-            print("Gesture began at: \(point)")
+            
+            if point.y > ryanGosling.center.y {
+                startedAtTheBottom = -1 // now we here
+            } else {
+                startedAtTheBottom = 1
+            }
+
         } else if sender.state == UIGestureRecognizerState.Changed {
-            print("Gesture changed at: \(point)")
+
             ryanGosling.center = CGPoint(x: ryanOriginalCenter.x + translation.x, y: ryanOriginalCenter.y + translation.y)
+            
+            var rotation = translation.x * 45/320 * CGFloat(startedAtTheBottom)
+            print("translation x: ", translation.x)
+            
+            if ryanGosling.center.x > 160 {
+                ryanGosling.transform = CGAffineTransformMakeRotation(CGFloat(rotation * CGFloat(M_PI) / 180))
+            } else {
+                ryanGosling.transform = CGAffineTransformMakeRotation(CGFloat(rotation * CGFloat(M_PI) / 180))
+            }
+            
         } else if sender.state == UIGestureRecognizerState.Ended {
-            print("Gesture ended at: \(point)")
+                
+            if translation.x < -80 {
+                UIView.animateWithDuration(0.2, animations: {
+                    self.ryanGosling.center = CGPoint(x: -500.0, y: self.ryanGosling.center.y)
+                    }
+                );
+            } else if translation.x > 80 {
+                UIView.animateWithDuration(0.2, animations: {
+                    self.ryanGosling.center = CGPoint(x: 500.0, y: self.ryanGosling.center.y)
+                    }
+                );
+            } else {
+                UIView.animateWithDuration(0.2, animations: {
+                    self.ryanGosling.center = self.ryanOriginalCenter
+                    }
+                );
+            }
         }
     }
 
+    @IBAction func reset(sender: AnyObject) {
+        ryanGosling.center = ryanOriginalCenter
+        ryanGosling.transform = CGAffineTransformIdentity
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -15,6 +15,8 @@
 		9672D17D1C87E36300F2E8A9 /* tinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D17C1C87E36300F2E8A9 /* tinderTests.swift */; };
 		9672D1881C87E36300F2E8A9 /* tinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1871C87E36300F2E8A9 /* tinderUITests.swift */; };
 		9672D1961C87E4B700F2E8A9 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1951C87E4B700F2E8A9 /* CardsViewController.swift */; };
+		9672D1991C87EB4C00F2E8A9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D1981C87EB4C00F2E8A9 /* Common.swift */; };
+		9672D19B1C87F6EC00F2E8A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672D19A1C87F6EC00F2E8A9 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9672D1871C87E36300F2E8A9 /* tinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tinderUITests.swift; sourceTree = "<group>"; };
 		9672D1891C87E36300F2E8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9672D1951C87E4B700F2E8A9 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		9672D1981C87EB4C00F2E8A9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../facebook/facebook/Common.swift; sourceTree = "<group>"; };
+		9672D19A1C87F6EC00F2E8A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9672D1671C87E36300F2E8A9 /* AppDelegate.swift */,
+				9672D1981C87EB4C00F2E8A9 /* Common.swift */,
 				9672D1691C87E36300F2E8A9 /* ViewController.swift */,
 				9672D16B1C87E36300F2E8A9 /* Main.storyboard */,
 				9672D16E1C87E36300F2E8A9 /* Assets.xcassets */,
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9672D1951C87E4B700F2E8A9 /* CardsViewController.swift */,
+				9672D19A1C87F6EC00F2E8A9 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9672D1991C87EB4C00F2E8A9 /* Common.swift in Sources */,
 				9672D16A1C87E36300F2E8A9 /* ViewController.swift in Sources */,
+				9672D19B1C87F6EC00F2E8A9 /* ProfileViewController.swift in Sources */,
 				9672D1681C87E36300F2E8A9 /* AppDelegate.swift in Sources */,
 				9672D1961C87E4B700F2E8A9 /* CardsViewController.swift in Sources */,
 			);

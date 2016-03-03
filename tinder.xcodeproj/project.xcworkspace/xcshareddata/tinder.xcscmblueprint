@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2DB63F185A3216E47EF906E721112AB5B97F213F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "69758B76BABBE8556B54216216F4F21A27485906" : 0,
+    "2DB63F185A3216E47EF906E721112AB5B97F213F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB0D1900-EE3E-4800-A45B-5F2BB0DF8A06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "69758B76BABBE8556B54216216F4F21A27485906" : "facebook\/",
+    "2DB63F185A3216E47EF906E721112AB5B97F213F" : "tinder\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tinder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tinder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/putorti\/codepath-tinder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2DB63F185A3216E47EF906E721112AB5B97F213F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/putorti\/facebook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "69758B76BABBE8556B54216216F4F21A27485906"
+    }
+  ]
+}
